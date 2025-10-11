@@ -2,13 +2,13 @@
 
 ### Available Commands
 
-**`npm run lint`**  
+**`npm run lint:check`**  
 Checks all files for code quality issues (errors, bugs, style violations).  
 Use before committing to see what needs fixing.
 
-**`npm run lint:fix`**  
+**`npm run lint`**  
 Automatically fixes ESLint issues where possible.  
-Use when `npm run lint` shows fixable problems.
+Use when `npm run lint:check` shows fixable problems.
 
 **`npm run format`**  
 Formats all files with Prettier for consistent style.  
@@ -26,6 +26,6 @@ npm install
 npm run setup:hooks
 
 # Before committing
-npm run lint:fix
+npm run lint
 npm run format
 ```

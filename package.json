@@ -15,9 +15,10 @@
   "author": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint --fix",
     "format": "prettier . --write",
-    "lint:fix": "eslint --fix",
+    "format:check": "prettier . --check",
+    "lint:check": "eslint .",
     "test:unit": "node --test --experimental-transform-types ./test/unit/**.test.ts",
     "setup:hooks": "bash ./scripts/setup-hooks.sh"
   },
