@@ -1,0 +1,38 @@
+{
+  "name": "marine-traffic",
+  "version": "1.0.0",
+  "description": "A maritime traffic management system designed to prevent ship collisions in open waters through real-time position tracking and collision detection algorithms.",
+  "homepage": "https://github.com/MaksymTeslenkoDev/marine-traffic#readme",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/MaksymTeslenkoDev/marine-traffic/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaksymTeslenkoDev/marine-traffic.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier . --write",
+    "lint:fix": "eslint --fix",
+    "test:unit": "node --test --experimental-transform-types ./test/unit/**.test.ts",
+    "setup:hooks": "bash ./scripts/setup-hooks.sh"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.37.0",
+    "@types/node": "^24.7.1",
+    "eslint": "^9.37.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "globals": "^16.4.0",
+    "jiti": "^2.6.1",
+    "prettier": "^3.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.0"
+  },
+  "dependencies": {}
+}
