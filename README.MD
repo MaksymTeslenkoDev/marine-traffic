@@ -26,7 +26,7 @@ This service provides a centralized coordination system where ships can transmit
 
 ## 🛠️ Tech Stack
 
-- **Runtime**: Node.js (v20+)
+- **Runtime**: Node.js (v22.18+)
 - **Language**: TypeScript
 - **Web Framework**: Fastify
 - **Configuration**: JSON Schema validation with @sinclair/typebox
@@ -90,5 +90,9 @@ Apache 2.0
 Maksym Teslenko/ https://github.com/MaksymTeslenkoDev
 
 ---
+
+## 🛠️ Developer Tools
+
+This project uses ESLint and Prettier for code quality. See the [Developer Tools Guide](docs/DEVELOPER_TOOLS.md) for available commands and setup instructions.
 
 **Status**: 🚧 In Development - EPIC 1: Project Setup & Development Environment
