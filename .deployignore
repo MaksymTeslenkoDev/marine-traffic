@@ -1,0 +1,15 @@
+yarn.lock
+tsconfig.json
+README.MD
+LICENSE
+eslint.config.js
+.prettierrc
+.gitignore
+.prettierignore
+docs
+dist
+.deployignore
+local.config.json
+local.config.sample.json
+.vscode
+.git

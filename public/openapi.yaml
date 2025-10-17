@@ -1,0 +1,54 @@
+openapi: 3.1.0
+info:
+  title: Marine Traffic API
+  version: 1.0.0
+  description: Simple demo OpenAPI spec for testing resource copying to `dist/`.
+servers:
+  - url: https://api.marine-traffic.local/v1
+paths:
+  /ships:
+    get:
+      summary: List all ships
+      responses:
+        "200":
+          description: A list of ships
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                    name:
+                      type: string
+                    status:
+                      type: string
+  /ships/{id}:
+    get:
+      summary: Get ship details
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Details of a single ship
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Ship"
+components:
+  schemas:
+    Ship:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        status:
+          type: string
