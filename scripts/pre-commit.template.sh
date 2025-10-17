@@ -13,11 +13,14 @@ if [ -z "$STAGED_FILES" ]; then
   exit 0
 fi
 
-echo "🧹 ESLint fixing..."
-yarn eslint --fix $STAGED_FILES
-
 echo "✨ Prettier formatting..."
-yarn prettier --write $STAGED_FILES
+yarn format
+
+echo "🧹 ESLint..."
+yarn lint
+
+echo "✨ Typecheck..."
+yarn typecheck
 
 echo "➕ Restaging updated files..."
 echo "$STAGED_FILES" | xargs git add
